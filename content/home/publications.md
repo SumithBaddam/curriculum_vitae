@@ -1,51 +1,43 @@
 +++
-# Accomplishments widget.
-widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+# Recent Publications widget.
+# This widget displays recent publications from `content/publication/`.
+widget = "publications"
+active = true
+date = 2016-04-20T00:00:00
 
-title = "Patent & Publications"
+title = "Publications"
 subtitle = ""
 
-# Date format
-#   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
-date_format = "Jan 2006"
+# Order that this section will appear in.
+weight = 4
 
-# Accomplishments.
-#   Add/remove as many `[[item]]` blocks below as you like.
-#   `title`, `organization` and `date_start` are the required parameters.
-#   Leave other parameters empty if not required.
-#   Begin/end multi-line descriptions with 3 quotes `"""`.
+# Number of publications to list.
+count = 10
 
-[[item]]
-  organization = "Cisco Systems Inc."
-  organization_url = ""
-  title = "Customer Success using Deep Learning - Patent"
-  url = "http://www.hrpub.org/download/20180930/AEB7-11812034.pdf"
-  date_start = "2018-10-01"
-  date_end = ""
-  description = "Built a prediction model for prioritizing the bugs identified during testing phases whether to be fixed fast or can wait. Unstructured bug attributes like descriptions, error log files along with 170 structured fields were used for building the system. It was implemented using LSTM and CNN in Keras and TensorFlow."
+# List format.
+#   0 = Simple
+#   1 = Detailed
+#   2 = APA
+#   3 = MLA
+#   4 = Stream
+list_format = 4
 
+# Filter by publication type.
+# -1: Any
+#  0: Uncategorized
+#  1: Conference proceedings
+#  2: Journal
+#  3: Work in progress
+#  4: Technical report
+#  5: Book
+#  6: Book chapter
+publication_type = "-1"
 
-[[item]]
-  organization = "Cisco Systems Inc."
-  organization_url = "https://www.edx.org"
-  title = "Prediction of issues customers face in a software using unsupervised learning"
-  url = "http://dcal.iimb.ernet.in/baiconf2017/"
-  #certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
-  date_end = ""
-  description = "Implemented Deep Neural Network model in TensorFlow which predicts the issues customers might face in a Cisco product post its release, helping developer teams fix them prior with an accuracy of 95% on Cisco’s Next-Gen devices."
-  
-[[item]]
-  organization = "Cisco Systems Inc."
-  organization_url = "https://www.edx.org"
-  url = "http://www.mgmt.iisc.ac.in/~icbai2018/"
-  date_start = "2018-03-01"
-  date_end = ""
-  title = "Intelligent defect creation system using Siamese CNN LSTM techniques"
-  description ="Implemented a duplicate bug detector that identifies whether a newly created bug is a duplicate of an existing bug in the Cisco Defect Tracking System and then retrieves all similar bugs from the database with an accuracy close to 90%."
-  
+# Exclude publications that are shown in the Selected Publications widget?
+exclude_selected = false
 +++
 
+1. [*Spoken term detection from continuous speech using ANN posteriors and image processing techniques.*](https://ieeexplore.ieee.org/abstract/document/7561151/) Shankar, Ravi; **Jain, Arpit**; K T, Deepak; C M, Vikram; Prasanna, S R M; 2016 Twenty Second National Conference on Communication (NCC), Guwahati, India
+2. [*A Robust Reliable and Low Complexity on chip f-QRS Detection and Identification Architecture for Remote Personalized Health Care Applications.*](http://www.ingentaconnect.com/content/asp/jolpe/2015/00000011/00000003/art00015)Vemishetty, Naresh; **Jain, Arpit**; Amber, Aashish; Maheshwari, Sidharth; Jagirdar, Agathya; Acharyya, Amit; Journal of Low Power Electronics 11, 387-400 (2015)
+3. (**Best Video Demo Award**) [*MedAssist : Prescription Reminder for the elderly.*](http://ieeexplore.ieee.org/document/7899217/) Gupta, Kshitiz; **Jain, Arpit**; Harsha Vardhan, P.; Singh, Sumeet; Amber, Aashish; Sethi, Amit; 2014 Texas Instruments India Educators' Conference (TIIEC), Bengaluru, India
+4. (**Best Paper Award**) [*A Low Complexity Architecture for Online on-chip Detection and Identification of f-QRS feature for Remote Personalized Health Care Applications*](http://ieeexplore.ieee.org/document/7172759/) Vemishetty, Naresh; **Jain, Arpit**; Amber, Aashish; Acharyya, Amit; 2014 Fifth International Symposium on Electronic System Design, Surathkal, India
